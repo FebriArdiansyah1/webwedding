@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>undangan digital</title>
+    <title>Wedding Invitation</title>
    <!-- ini link boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
    
     <!-- link simply countdown -->
     <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css"/>
@@ -18,6 +21,9 @@
 
     <!-- ini link icons botstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- ini link AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
    
     <!-- ini link style css -->
     <link rel="stylesheet" href="style.css">
@@ -26,11 +32,11 @@
   <body>
   <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
     <main>
-        <h4>Kepada Bapak/ibu/saudara/i,</h4>
-        <h1>Tono & Intan</h1>
+        <h4>Kepada <span>Bapak/ibu/saudara/i, </span></h4>
+        <h1>Ahmad & Fa'ik</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam:</p>
         <div class="simply-countdown"></div>
-        <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll">Lihat Undangan</a>
+        <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()">Lihat Undangan</a>
     </main>
   </section>
    
@@ -62,20 +68,19 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8 text-center">
-                <h2>Acara Pernikahan</h2>
-                <h3>Diselenggarakan Pada 0 0 0 di Banyuwangi, Jawa Timur</h3>
-                <p>Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu/Saudara/i, untuk hadir pada acara pernikahan kami</p>
+                <h2 data-aos="fade-left" data-aos-duration="1500">Acara Pernikahan</h2>
+                <h3 data-aos="fade-right" data-aos-duration="1500">Diselenggarakan Pada 0 0 0 di Banyuwangi, Jawa Timur</h3>
+                <p data-aos="zoom-in" data-aos-duration="1500">Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu/Saudara/i, untuk hadir pada acara pernikahan kami</p>
             </div>
             <div class="row couple">
                 <div class="col-lg-6">
                     <div class="row">
                          <div class="col-8 text-end">
-                            <h3 class="coce">Tono</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolor quod earum fugit explicabo voluptatibus, non expedita laborum culpa accusamus dolores minus asperiores quae accusantium nihil esse. Iure, rerum error.</p>
-                            <p>Putra Bapak Fulan <br> Dan <br> Ibu Fulan</p>
+                            <h3 class="coce" data-aos="fade-right" data-aos-duration="1500">Ahmad Rizal Sholeh</h3>
+                            <p data-aos="fade-up-right" data-aos-duration="1500">Putra Bapak Muhammad <br> Dan <br> Ibu Sri Wahyuni</p>
                         </div>
                         <div class="col-4">
-                            <img src="cowo1.jpeg" alt="Tono" class="img-responsive rounded-circle">
+                            <img src="cowo1.jpeg" alt="Tono" class="img-responsive rounded-circle" data-aos="zoom-in" data-aos-duration="1500">
                         </div>
                         </div>
                     </div>
@@ -85,12 +90,11 @@
                     <div class="col-lg-6">
                         <div class="row">
                             <div class="col-4">
-                                <img src="cewe1.jpeg" alt="Intan" class="img-responsive rounded-circle">
+                                <img src="cewe1.jpeg" alt="Intan" class="img-responsive rounded-circle" data-aos="zoom-out" data-aos-duration="1500">
                             </div>
                              <div class="col-8 text-align-right">
-                                <h3 class="coce">Intan</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolor quod earum fugit explicabo voluptatibus, non expedita laborum culpa accusamus dolores minus asperiores quae accusantium nihil esse. Iure, rerum error.</p>
-                                <p>Putri Bapak Fulan <br> Dan <br> Ibu Fulan</p>
+                                <h3 class="coce" data-aos="fade-left" data-aos-duration="1500">Fa'ikotul Hikma</h3>
+                                <p data-aos="fade-left" data-aos-duration="1500">Putri Bapak Achmadi <br>Dan <br>Ibu Uun</p>
                             </div>
                             </div>
                         </div>
@@ -98,6 +102,59 @@
             </div>
         </div>
      </div>  
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e7008a" fill-opacity="0.2" d="M0,96L48,90.7C96,85,192,75,288,101.3C384,128,480,192,576,213.3C672,235,768,213,864,197.3C960,181,1056,171,1152,176C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+  </section>
+
+  <section class="story">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10">
+          <h4 data-aos="fade-left" data-aos-duration="1500">Ar-Rum 21</h4>
+          <main data-aos="fade-left" data-aos-duration="1500"><i>"Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang.sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berfikir".</i> </main>
+        </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <span data-aos="fade-in" data-aos-duration="1500">Bagaimana cerita kami bersemi</span>
+          <h2 data-aos="fade-in" data-aos-duration="1500">Stories</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-panel" data-aos="fade-up-right" data-aos-duration="1500">
+                  <div class="timeline-heading">
+                    <h3>First Meet</h3>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Kisah ini berawal dari pertemuan kami dibulan 0 tahun 0000.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-panel" data-aos="fade-up-left" data-aos-duration="1500">
+                  <div class="timeline-heading">
+                    <h3>Relationship</h3>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Setelah menjalani hubungan selama 1000 tahun, kami merasa cocok dan mantap untuk melangkah ke komitmen yang lebih serius.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-panel" data-aos="fade-up" data-aos-duration="1500">
+                  <div class="timeline-heading">
+                    <h3>Engagement</h3>
+                  </div>
+                  <div class="timeline">
+                    <p>Pada tanggal 0 0 0000, krdua keluarga besar kami telah bertemu dan bersilaturahmi, sekaligus menjadi saksi atas keputusan kami berdua untuk menikah.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </section>
 
@@ -105,13 +162,13 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-8 col-10 text-center">
-          <h2>Informasi Acara</h2>
-          <p class="alamat">Alamat: Ketapang. <br>Jln.Gatot Subroto,kec. Kalipuro, Kota Banyuwangi.</p>
+          <h2 data-aos="fade-up" data-aos-duration="1500">Informasi Acara</h2>
+          <p class="alamat" data-aos="zoom-in-up" data-aos-duration="1500">Alamat: Ketapang. <br>Jln.Gatot Subroto,kec. Kalipuro, Kota Banyuwangi.</p>
           <a href="#" target="_blank" class="btn btn-light btn-sm my-3">Klik untuk membuka peta</a>
-          <p class="description">Diharapkan untuk tidak salah alamat dan tanggal.Manakala tiba di tujuan namun tidak ada tanda-tanda sedang dilangsungkan pernikahan boleh jadi anda salah jadwal atau salah tempat.</p>
+          <p class="description" data-aos="zoom-in-up" data-aos-duration="1500"></p>Diharapkan untuk tidak salah alamat dan tanggal.Manakala tiba di tujuan namun tidak ada tanda-tanda sedang dilangsungkan pernikahan boleh jadi anda salah jadwal atau salah tempat.</p>
         </div>
       </div>
-      <div class="row justify-content-center mt-4">
+      <div class="row justify-content-center mt-4" data-aos="fade-out" data-aos-duration="1500">
         <div class="col-md-5 col-10">
           <div class="card text-center text-bg-light mb-5">
             <div class="card-header">
@@ -134,7 +191,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-5 col-10">
+    <div class="col-md-5 col-10" data-aos="fade-out" data-aos-duration="1500">
       <div class="card text-center text-bg-light">
         <div class="card-header">
           Resepsi
@@ -159,14 +216,14 @@
   </section>
 
   <section id="rsvp" class="rsvp">
-    <div class="container">
+    <div class="container reveal">
       <div class="row justify-content-center">
         <div class="col-md-8 col-10 text-center">
-          <h2>KOnfirmasi Kehadiran</h2>
-          <p>Isi Form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
+          <h2 data-aos="fade-right" data-aos-duration="1500">Konfirmasi Kehadiran</h2>
+          <p data-aos="fade-right" data-aos-duration="1500">Isi Form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
         </div>
       </div>
-      <form class="row row-cols-md-auto g-3 align-items-center justify-content-center">
+      <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="1000">
         <div class="col-12">
           <div class="mb-3">
             <label for="nama" class="form-label">Nama</label>
@@ -185,7 +242,7 @@
                 <select name="status" id="status" class="form-select">
                   <option selected>Pilih salah satu</option>
                   <option value="1">Hadir</option>
-                  <option value="1">Todak Hadir</option>
+                  <option value="1">Tidak Hadir</option>
                 </select>
               </div>
               </div>
@@ -195,10 +252,34 @@
         </div>
         </div>
       </form>
+
+      <div class="row justify-content-center mt-5">
+        <div class="col md-6">
+          <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://wedding-invitation-8mlbwwvvdq.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+      </div>
       
 
     </div>
-
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="10" d="M0,160L34.3,138.7C68.6,117,137,75,206,85.3C274.3,96,343,160,411,181.3C480,203,549,181,617,144C685.7,107,754,53,823,53.3C891.4,53,960,107,1029,160C1097.1,213,1166,267,1234,261.3C1302.9,256,1371,192,1406,160L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
   </section>
   
 
@@ -230,13 +311,14 @@
         </ul>
       </div>
     </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f14e95" fill-opacity="0.2" d="M0,128L48,112C96,96,192,64,288,69.3C384,75,480,117,576,154.7C672,192,768,224,864,213.3C960,203,1056,149,1152,122.7C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
   </section>
 
   <footer>
     <div class="container">
       <div class="row">
         <div class="col text-center">
-          <small class="block">&copy; 2023 Wedding.All Right Reserved.</small>
+          <small class="block">&copy; 2024 Wedding.All Right Reserved.</small>
           <small class="block">Design by <a href="https://www.instagram.com/febriiar_?igsh=djhqMDlobnJtaXF5&utm_source=qr">@febriardiansyah</a></small>
 
           <ul class="mt-3">
@@ -251,6 +333,22 @@
     </div>
   </footer>
   
+  <div id="audio-container">
+    <audio id="song" autoplay loop>
+      <source src="audio/Daniel Caesar & H.E.R. - Best Part, a Visual (320 kbps).mp3">
+    </audio>
+
+    <div class="audio-icon-wrapper" style="display: none;">
+      <i class="bi bi-disc"></i>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
@@ -287,6 +385,11 @@
 
   <script>
     const rootElement = document.querySelector(":root");
+    const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
+    const song = document.querySelector('#song');
+    let isPLaying = false;
+    
+    
     function disablescroll() {
       scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
@@ -294,16 +397,39 @@
       window.onscroll =  function() {
         window.scrollTo(scrollTop, scrollLeft);
       }
-      rootElement.style.scrollBehavior = 'auto'
+      rootElement.style.scrollBehavior = 'auto';
 
     }
 
     function enableScroll() {
-      window.onscroll =  function() { }
-      rootElement.style.scrollBehavior = 'smooth'
-  }
-    disableScroll ();
+      window.onscroll = function() { }
+      rootElement.style.scrollBehavior = 'smooth';
+      // localStorage.setItem('opened', 'true');
+      playAudio();
+    }
 
+    function playAudio() {
+      
+      audioIconWrapper.style.display = 'flex';
+      song.play();
+      isPLaying = true;
+    }
+
+
+    // if (!localStorage.getItem('opened')) {
+    //   disableScroll ();
+    
+    disableScroll();
+
+  </script>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const nama = urlParams.get('n') || '';
+    const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
+    const namaContainer = document.querySelector('.hero h4 span');
+    namaContainer.innerText = `${pronoun} ${nama},`;
+
+    document.querySelector('#nama').value = nama
   </script>
   </body>
 </html>
